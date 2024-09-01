@@ -1,281 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alice&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="imagen/logo.png" type="image/png">
-    <title>Chiquitines Creativos- Neudesarrollo Infantil</title>
-
+    <title>CHiquitines Creativos-Neudesarrollo Infantil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 60px;
+            margin-right: 20px;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .slogan {
+            font-size: 16px;
+            color: #777;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
 </head>
+<body>
 
-<body class="">
-    <header class="h-screen w-full " style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-            url('imagen/PortadaNeudesarrollo.png'); background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center; " id="inicio">
-        <nav class="pt-4 py-4 fixed w-full z-10 top-0 " id="navegador">
-            <div class="max-w-screen-xl mx-auto flex justify-between items-center px-5 2xl:px-0">
-                <div class="">
-                    <img src="imagen/LogoChiquitines.png" alt="Logo" class="w-full h-10 mt-[-12px]">
-                </div>
-
-                <button id="menu_button" type="button" class="block md:hidden z-20 focus:outline-none text-[#C8A27A]">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </button>
-
-                <div class="hidden absolute top-16 md:flex md:relative md:top-0 w-full left-0 md:w-auto" id="menu">
-                    <div class="flex flex-col md:flex-row text-center bg-[#FFEED8] md:bg-transparent">
-                        <a href="#inicio"
-                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Inicio</a>
-                        <a href="#sobreNosotros"
-                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Sobre
-                            Nosotros</a>
-                        <a href="#menu_cafe"
-                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Servicios</a>
-                        <a href="#contacto"
-                            class="menu-link font-bold md:mx-4 py-4 md:py-0 hover:bg-[#C8A27A] text-[#603809] md:text-white md:hover:bg-transparent">Contacto</a>
-                    </div>
-                </div>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Centro Psicológico Logo">
+            <div>
+                <div class="title">CHIQUITINES CREAITVOS-NEUDESARROLLO INFANTIL</div>
+                <div class="slogan">"Pensamos en tu bienestar"</div>
             </div>
+        </div>
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Staff Psicológico</a>
+            <a href="#">Ubicación</a>
+            <a href="#">Más</a>
         </nav>
-
-        <div class="max-w-screen-xl mx-auto h-screen flex items-center  px-8 2xl:px-0">
-            <div class=" px-4">
-                <h1 class="font-alfa text-[#FFA500] text-3xl md:text-5xl mb-4">Explora el Mundo<br>del <span
-                        class="text-[#87CEEB]">Desarrollo Infantil</span></h1>
-                <p class="text-white max-w-md font-alice my-12 ">
-                    Desarrolla nuevos aprendizajes , con nuestros expertos que son 
-                    capaces de mejorar el bienestar de sus hijos o familiares.
-                </p>
-                <button
-                    class="font-alice bg-[#F9C06A] font-semibold text-black px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300">Agenda
-                    una cita por WhatssApp</button>
-            </div>
+        <div class="social-icons">
+            <a href="#"><img src="tiktok-icon.png" alt="TikTok"></a>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
         </div>
     </header>
 
-    <section id="sobreNosotros" class="relative py-14 md:py-16 ">
-        <div class="max-w-screen-xl mx-auto px-10 md:px-10 2xl:px-4">
-            <div class="flex flex-col md:flex-row justify-between md:gap-14">
-                <div class="md:w-1/2">
-
-                    <h2 class="text-4xl font-bold mb-10  text-[#603809]  md:mb-6 ">Sobre nosotros</h2>
-                    <p class="text-gray-700 font-alice  md:text-base mb-8 max-w-sm">
-                        Somos un equipo dedicado a fomentar el crecimiento y el bienestar de los 
-                        niños en cada etapa de su desarrollo. Nuestra pasión por el desarrollo 
-                        infantil nos impulsa a ofrecer recursos y estrategias innovadoras que
-                        apoyan el aprendizaje, el desarrollo emocional y la salud física de
-                        los más pequeños.
-                    </p>
-                </div>
-                <div class="md:w-1/2">
-                    <img src="imagen/Equipo.png" alt="Interior de la cafetería" class="w-full h-96 rounded-lg shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="menu_cafe" style="background-image: url('imagen/menuPortadaNeu.jpg');">
-        <div class="container mx-auto py-16 px-10 md:px-10 2xl:px-36">
-            <h2 class="text-4xl font-bold mb-10 text-center text-white ">Servicios</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 ">
-                    <img src="imagen/TerapiaOcupacional.jpg" alt="Cappuccino" class="w-full h-auto ">
-                    <div class="p-4 text-center">
-                        <h2 class="text-xl font-semibold text-[#603809] mb-2">Terapia Ocupacional</h2>
-                        <p class="text-[#603809] text-2xl mb-4">Mas informacion en el WhatssApp</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="imagen/TerapiaLenguaje.jpg" alt="Cappuccino" class="w-full h-auto ">
-                    <div class="p-4 text-center">
-                        <h2 class="text-xl font-semibold text-[#603809] mb-2">Terapia Lenguaje</h2>
-                        <p class="text-[#603809] text-2xl mb-4">Mas informacion en el WhatssApp</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
-                    <img src="imagen/TerapiaFisica.jpg" alt="Cappuccino" class="w-full h-auto ">
-                    <div class="p-4 text-center">
-                        <h2 class="text-xl font-semibold text-[#603809] mb-2">Terapia Fisica</h2>
-                        <p class="text-[#603809] text-2xl mb-4">Mas informacion en el WhatssApp</p>
-
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 ">
-                    <img src="imagen/TerapiaCognitiva.jpg" alt="Cappuccino" class="w-full h-auto ">
-                    <div class="p-4 text-center">
-                        <h2 class="text-xl font-semibold text-[#603809] mb-2">Terapia Cognitiva</h2>
-                        <p class="text-[#603809] text-2xl mb-4">Mas informacion en el WhatssApp</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="galeria">
-        <div class="max-w-6xl mx-auto py-16 px-10 md:px-10 2xl:px-0">
-            <h2 class="text-3xl font-bold mb-10 text-center text-[#603809]">Galería de imágenes</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 h-auto md:h-[40rem] overflow-hidden">
-                <div class="space-y-2">
-                    <div class="h-auto md:h-1/2">
-                        <img src="imagen/galeria1.png" alt="Rio Coffee"
-                            class="w-full h-full object-cover rounded-lg transform transition duration-300 hover:brightness-75">
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 h-auto md:h-1/2">
-                        <div class="h-32 md:h-full">
-                            <img src="imagen/galeria2.png" alt="Latte Art"
-                                class="w-full h-full object-cover rounded-lg transform transition duration-300 hover:brightness-75">
-                        </div>
-                        <div class="h-32 md:h-full">
-                            <img src="imagen/galeria3.png" alt="Street Scene"
-                                class="w-full h-full object-cover rounded-lg transform transition duration-300 hover:brightness-75">
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto md:h-full">
-                    <img src="imagen/galeria4.png" alt="Restaurant Interior"
-                        class="w-full h-full object-cover rounded-lg transform transition duration-300 hover:brightness-75">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#87CEEB]">
-
-        <div class="max-w-screen-xl mx-auto px-10 py-16 md:px-10 2xl:px-16">
-            <h3 class="text-3xl font-bold text-center text-[#603809] mb-10">Lo que dicen nuestros clientes</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
-                    class="bg-[#F5E6D3] rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105 border-2 border-[#C8A27A]">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.pexels.com/photos/7752806/pexels-photo-7752806.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Jenny Thomas" class="w-20 h-20 rounded-full mr-4 border-4 border-[#C8A27A]">
-                        <div>
-                            <h3 class="font-bold text-[#603809] text-lg">Jenny Thomas</h3>
-                            <div class="flex text-[#FF9800]">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-[#603809] ">"Me encanta este lugar. Con la ayuda de ellos , mi hijo pudo mejorar
-                        en su metodo de lenguaje y se puede expresar mejor."</p>
-                </div>
-
-                <div
-                    class="bg-[#F5E6D3] rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105 border-2 border-[#C8A27A]">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Carlos Ruiz" class="w-20 h-20 rounded-full mr-4 border-4 border-[#C8A27A]">
-                        <div>
-                            <h3 class="font-bold text-[#603809] text-lg">Carlos Ruiz</h3>
-                            <div class="flex text-[#FF9800]">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-togo"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-[#603809] ">"La atención que me dieron fue espectacular , lo recomiendo para
-                        todo padre que quiera que sus hijos progresen en su desarrollo.
-                </div>
-
-                <div
-                    class="bg-[#F5E6D3] rounded-lg shadow-md p-6 transition-transform duration-300 hover:scale-105 border-2 border-[#C8A27A]">
-                    <div class="flex items-center mb-4">
-                        <img src="https://images.pexels.com/photos/1840608/pexels-photo-1840608.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Maria Gonzalez" class="w-20 h-20 rounded-full mr-4 border-4 border-[#C8A27A]">
-                        <div>
-                            <h3 class="font-bold text-[#603809] text-lg">Maria Gonzalez</h3>
-                            <div class="flex text-[#FF9800]">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-[#603809] ">"Un lugar en donde se puede confiar a nuestros hijos, porque estan los mejores expertos que ayudan a nuestros hijos desarrollen sus habilidades."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <div class="max-w-6xl mx-auto py-16 px-10 md:px-10 2xl:px-0 ">
-            <h2 class="text-3xl font-bold mb-10 text-center text-[#603809]">Contactanos y Visitanos</h2>
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-
-                <div class="w-full md:w-1/2  p-8 ">
-                    <h3 class="text-2xl font-semibold mb-6 text-[#603809]">Contáctanos</h3>
-
-                    <div class="mb-4">
-                        <input type="text" placeholder="Tu nombre"
-                            class="w-full p-3 border border-[#C8A27A] rounded-md bg-[#FFF9F0] focus:outline-none focus:ring-2 focus:ring-[#FFA500]">
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" placeholder="Tu correo"
-                            class="w-full p-3 border border-[#C8A27A] rounded-md bg-[#FFF9F0] focus:outline-none focus:ring-2 focus:ring-[#FFA500]">
-                    </div>
-                    <div class="mb-6">
-                        <textarea placeholder="Tu mensaje" rows="4"
-                            class="w-full p-3 border border-[#C8A27A] rounded-md bg-[#FFF9F0] focus:outline-none focus:ring-2 focus:ring-[#FFA500]"></textarea>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-[#FFA500] text-white px-6 py-3 rounded-md hover:bg-[#FF8C00] transition duration-300 font-semibold">Enviar
-                        mensaje</button>
-
-                </div>
-
-
-                <div class="w-full md:w-1/2 space-y-6">
-                    <img src="imagen/ChiquitinesCreativos.png" alt="Mapa de ubicación"
-                        class="w-full h-64 object-cover rounded-lg shadow-md">
-                    <div class="bg-[#F5E6D3] p-6 rounded-lg shadow-md">
-                        <h4 class="text-xl font-semibold mb-3 text-[#603809]">Chiquitines Creativos| Neudesarrollo Infantil</h4>
-                        <p class="text-[#603809] mb-2"><i class="fas fa-map-marker-alt mr-2 text-[#FFA500]"></i> Avenida Talara, entre las avenidas Alamos y Revolucion , 3 er sector, grupo 18, manzana A, Lote 6 , Referencia cerca del Mercado Tupac Amaru</p>
-                        <p class="text-[#603809] mb-2"><i class="fas fa-phone mr-2 text-[#FFA500]"></i>(+51) 983-284-807
-                        </p>
-                        <p class="text-[#603809]"><i class="fas fa-clock mr-2 text-[#FFA500]"></i> Lun-Vie: 9am-6pm,
-                            Sab 9am-1pm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-[#FFEED8] text-[#603809] py-4 border-t border-[#603809]">
-        <div class="max-w-screen-xl mx-auto px-4">
-
-            <div class="text-center ">
-                <p class="text-sm">&copy; Chiquitines Creativos - Neudesarrollo Infantil 2024. Todos los Derechos Reservados</p>
-            </div>
-        </div>
-    </footer>
-
-    <div class="bg-green-600 rounded-full w-14 h-14 flex items-center justify-center fixed bottom-10 right-5">
-        <button class="w-full" id="wsp_Informes">
-            <i class="fa-brands fa-whatsapp text-white text-4xl "></i>
-        </button>
-    </div>
-
-    <script src="index.js"> </script>
 </body>
-
 </html>
